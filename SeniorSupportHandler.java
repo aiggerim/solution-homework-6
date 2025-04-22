@@ -3,6 +3,8 @@ class SeniorSupportHandler extends SupportHandler {
     public void handle(String issue) {
         if (issue.equals("account_ban") || issue.equals("data_loss")) {
             System.out.println("[SeniorSupport] Cannot handle " + issue + " - escalate manually");
+        } else {
+            System.out.println("[SeniorSupport] Cannot handle " + issue + " - escalate manually");
         }
     }
 }
